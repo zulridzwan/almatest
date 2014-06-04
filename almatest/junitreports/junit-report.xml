@@ -1,1 +1,0 @@
-<?xml version='1.0' encoding='utf-8' standalone='yes' ?><testsuites><testsuite name="com.zulridzwan.alma.test.MainActivityTest"><testcase classname="com.zulridzwan.alma.test.MainActivityTest" name="testMyFirstTestTextView_labelText" time="1.225" /><testcase classname="com.zulridzwan.alma.test.MainActivityTest" name="testPreconditions" time="1.596" /></testsuite></testsuites>

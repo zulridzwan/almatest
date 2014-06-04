@@ -79,6 +79,12 @@
       <arg value="/data/data/${tested.package}/files/junit-report.xml" />
       <arg value="junitreports/junit-report.xml" />
       </exec>
+      <echo>Copying XML to Jenkins workspace</echo>
+      <copy todir="C:\Program Files\Jenkins\jobs\alma\workspace\junitreports">
+        <fileset dir="junitreports">
+          <include name="*"/>
+        </fileset>
+      </copy>
     </target>
     <import file="custom_rules.xml" optional="true" />
 

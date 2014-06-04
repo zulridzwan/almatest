@@ -66,14 +66,14 @@
             -post-build
             -pre-clean
     -->
-    <target name=”fetch-test-report”>
+    <target name="fetch-test-report">
       <echo>Downloading XML test report…</echo>
-      <mkdir dir=”junitreports”/>
-      <exec executable=”${adb}” failonerror=”true”>
-      <arg line=”${adb.device.arg}”/>
-      <arg value=”pull” />
-      <arg value=”/data/data/${tested.manifest.package}/files/junit-report.xml” />
-      <arg value=”junitreports/junit-report.xml” />
+      <mkdir dir="junitreports"/>
+      <exec executable="${adb}" failonerror="true">
+      <arg line="${adb.device.arg}"/>
+      <arg value="pull" />
+      <arg value="/data/data/${tested.manifest.package}/files/junit-report.xml" />
+      <arg value="junitreports/junit-report.xml" />
       </exec>
     </target>
     <import file="custom_rules.xml" optional="true" />

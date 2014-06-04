@@ -85,6 +85,12 @@
           <include name="*"/>
         </fileset>
       </copy>
+      <echo>Copying coverage to Jenkins workspace</echo>
+      <copy todir="C:\Program Files\Jenkins\jobs\alma\workspace\emma">
+        <fileset dir="bin">
+          <include name="coverage.*"/>
+        </fileset>
+      </copy>
     </target>
     <import file="custom_rules.xml" optional="true" />
 

@@ -93,6 +93,9 @@
       </copy>
     </target>
     <import file="custom_rules.xml" optional="true" />
+	<!--Example for use of custom_rules.xml
+	http://stackoverflow.com/questions/16026355/adding-external-jars-to-an-android-uiautomator-project
+	-->
 
     <!-- Import the actual build file.
 

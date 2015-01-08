@@ -6,13 +6,14 @@
 
     <uses-sdk android:minSdkVersion="18" />
     
-    <!-- <instrumentation
-        android:name="android.test.InstrumentationTestRunner"
-        android:targetPackage="com.zulridzwan.alma" />-->
-
     <!-- refer here: http://www.alittlemadness.com/2010/07/14/android-testing-xml-reports-for-continuous-integration/ -->
     <instrumentation
         android:name="com.zutubi.android.junitreport.JUnitReportTestRunner"
+        android:targetPackage="com.zulridzwan.alma" />\
+    
+    <!-- Refer here: http://stackoverflow.com/questions/13022706/using-custom-instrumentationtestrunner-in-eclipse-causes-error -->    
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
         android:targetPackage="com.zulridzwan.alma" />
        
 
